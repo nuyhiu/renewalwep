@@ -1,5 +1,5 @@
 window.onload = function () {
-    var schoolPosition = new kakao.maps.LatLng(37.6435, 127.2998);
+    var schoolPosition = new kakao.maps.LatLng(37.64356764561144, 127.29982249153348);
 
     var map = new kakao.maps.Map(
         document.getElementById('map'),
@@ -60,3 +60,4 @@ function moveTo(index) {
     map.setCenter(target);
     markers[index].info.open(map, markers[index].marker);
 }
+
