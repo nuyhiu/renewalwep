@@ -25,7 +25,7 @@ main {
 
 /* 지도 영역 */
 #map {
-    width: 1000px;
+    width: 900px;
     height: 500px;
     background-color: #ddd;
 }
@@ -60,3 +60,4 @@ footer {
     color: #666;
     padding: 15px;
 }
+
