@@ -1,43 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>마석고등학교 근처 장애인 도움 시설 지도</title>
+  <meta charset="UTF-8">
+  <title>마석고 주변 장애인 편의시설 지도</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4e303bd8cd68b497306ba1910d632d7e"></script>
+  <!-- 카카오 지도 SDK (본인 JavaScript 키) -->
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4e303bd8cd68b497306ba1910d632d7e"></script>
 </head>
 <body>
 
-<header>
-    <h1>학교 근처 장애인 도움 시설</h1>
-    <p>학교 주변의 장애인 편의 및 지원 시설을 지도에서 확인할 수 있습니다.</p>
-</header>
+  <h1>마석고 주변 장애인 편의시설</h1>
 
-<main>
-    <div id="map"></div>
+  <div id="map"></div>
 
-    <section class="list-section">
-        <h2>시설 목록</h2>
+  <div id="facility-list"></div>
 
-        <div class="facility" onclick="moveTo(0)">
-            <strong>○○ 장애인 복지관</strong><br>
-            휠체어 접근 가능 · 상담 지원
-        </div>
-
-        <div class="facility" onclick="moveTo(1)">
-            <strong>△△ 재활 센터</strong><br>
-            물리치료 · 재활 프로그램
-        </div>
-    </section>
-</main>
-
-<footer>
-    ※ 본 페이지는 마석고등학교 진로소그룹 <리뉴얼웹>에서 제작한 장애인 도움 시설 안내 웹페이지입니다.
-</footer>
-    
-<script src="map.js"></script>
+  <script src="map.js"></script>
 </body>
 </html>
-
