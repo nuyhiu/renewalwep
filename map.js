@@ -15,7 +15,6 @@ window.onload = function () {
     });
 };
 
-// 장애인 도움 시설 데이터
 var facilities = [
     {
         name: "○○ 장애인 복지관",
@@ -31,7 +30,6 @@ var facilities = [
 
 var markers = [];
 
-// 마커 + 인포윈도우
 facilities.forEach(function(facility) {
     var marker = new kakao.maps.Marker({
         map: map,
@@ -54,11 +52,11 @@ facilities.forEach(function(facility) {
     markers.push({ marker, info });
 });
 
-// 목록 클릭 시 이동
 function moveTo(index) {
     var target = facilities[index].position;
     map.setCenter(target);
     markers[index].info.open(map, markers[index].marker);
 }
+
 
 
