@@ -2,7 +2,6 @@ var mapContainer = document.getElementById('map');
 
 var mapOption = {
     center: new kakao.maps.LatLng(37.6435616, 127.2993351), 
-    level: 3
 };
 
 var map = new kakao.maps.Map(mapContainer, mapOption);
@@ -22,6 +21,7 @@ var facilities = [
     }
 ];
 
+
 var facilityList = document.getElementById("facility-list");
 
 facilities.forEach(function (facility) {
@@ -34,11 +34,11 @@ facilities.forEach(function (facility) {
     kakao.maps.event.addListener(marker, 'click', function () {
 
         facilityList.innerHTML = `
-          <p>
+          <div class="facility">
             <strong>${facility.name}</strong><br>
             주소: ${facility.address}<br>
             시설 유형: ${facility.type}
-          </p>
+          </div>
         `;
     });
 });
