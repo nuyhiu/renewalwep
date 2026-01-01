@@ -23,14 +23,12 @@ main {
     padding: 20px;
 }
 
-/* 지도 영역 */
 #map {
     width: 900px;
     height: 500px;
     background-color: #ddd;
 }
 
-/* 시설 목록 */
 .list-section {
     flex: 1;
     background-color: white;
@@ -60,4 +58,5 @@ footer {
     color: #666;
     padding: 15px;
 }
+
 
